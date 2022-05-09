@@ -1,0 +1,58 @@
+.home_conteiner{
+    width: 100%;
+}
+
+figure{
+    width: 100%;
+    margin-top: 1px;
+}
+
+.imagem{
+    width: 100%;
+    height: 100%;
+}
+
+
+.main_conteiner{
+    height: 80px;
+    width: 100%;
+    margin: 5px 0;
+    line-height: 70px;
+
+}
+
+.main_conteiner>ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main_conteiner>ul>li{
+    list-style: none;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.img_grid{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img_left{
+    position: relative;
+    left: 9%;
+}
+
+.img_center{
+    margin-top: 4px;
+    margin-right: 10px;
+}
+
+.produtos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
