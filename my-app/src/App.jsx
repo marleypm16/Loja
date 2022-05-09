@@ -7,6 +7,7 @@ import Feminino from './Componentes/Pages/Feminino'
 import Masculino from './Componentes/Pages/Masculino'
 import Sacola from './Componentes/Pages/Sacola'
 import Footer from './Componentes/Layout/Footer'
+import Produto from './Componentes/Layout/Produto'
 
 
 
@@ -23,6 +24,7 @@ function App() {
               <Route path='/feminino' element={<Feminino/>}/>  
               <Route path='/sacola' element={<Sacola/>}/>
               <Route path='/login' element={<LogIn/>}/>
+              <Route path='/produto' element={<Produto/>}/>
             </>
           </Routes>
         </Conteiner>    
