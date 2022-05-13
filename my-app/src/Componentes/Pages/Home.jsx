@@ -16,6 +16,8 @@ import produto7 from "./img/produto7.jpg";
 import produto8 from "./img/produto8.jpg";
 import produto9 from "./img/produto9.jpg";
 import produto10 from "./img/produto10.jpg";
+import Img from "../Layout/Img";
+import Description from "../Layout/Description";
 
 function Home() {
   return (
@@ -50,41 +52,56 @@ function Home() {
           <div className={style.produtos}>
             <div className={style.produto}>
               <Link to="/produto">
-                <img src={produto1} alt="produto1" />
+                <Img src={produto1} text="produto1" />
               </Link>
-              <Link to="/produto">Regata Machao SKULL TRASH <br />Preta</Link>
+
+              <Description
+                text="Regata Machao SKULL TRASH"
+                quebradelinha="Preta"
+              />
+
               <label>R$ 99,90</label>
               <span>Ou em 3x no cartão de 33,30</span>
             </div>
             <div className={style.produto}>
               <Link to="/produto">
-                <img src={produto2} alt="produto2" />
+                <Img src={produto2} text="produto2" />
               </Link>
-                <Link to="/produto">Regata Machao Arnold Legend <br /> Preta</Link>
+
+              <Description
+                text="Regata Machao Arnold Legend"
+                quebradelinha="Preta"
+              />
+
               <label>R$ 99,90</label>
               <span>Ou em 3x no cartão de 33,30</span>
             </div>
             <div className={style.produto}>
               <Link to="/produto">
-                <img src={produto3} alt="produto3" />
+                <Img src={produto3} text="produto3" />
               </Link>
-              <Link to="/produto">Regata Machao DASH Azul</Link>
+
+              <Description text="Regata Machao DASH Azul" />
+
               <label>R$ 99,90</label>
               <span>Ou em 3x no cartão de 33,0</span>
             </div>
             <div className={style.produto}>
               <Link to="/produto">
-                <img src={produto4} alt="produto4" />
+                <Img src={produto4} text="produto4" />
               </Link>
-              <Link to="/produto">Regata Machao Bait Preta</Link>
+              <Description text="Regata Machao Bait Preta" />
               <label>R$ 99,90</label>
               <span>Ou em 3x no cartão de 33,30</span>
             </div>
             <div className={style.produto}>
               <Link to="/produto">
-                <img src={produto5} alt="produto5" />
+                <Img src={produto5} text="produto5" />
               </Link>
-              <Link to="/produto">Regata Machao States Azul <br /> Marinho</Link>
+              <Description
+                text="Regata Machao States Azul"
+                quebradelinha="Marinho"
+              />
               <label>R$ 99,90</label>
               <span>Ou em 3x no cartão de 33,30</span>
             </div>
@@ -92,41 +109,60 @@ function Home() {
           <div className={style.produtos}>
             <div className={style.produto}>
               <Link to="/produto">
-                <img src={produto6} alt="produto6" />
+                <Img src={produto6} text="produto6" />
               </Link>
-              <Link to="/produto">Regata Feminina Anatomic Dry <br />ABS Preta</Link>
+
+              <Description
+                text="Regata Feminina Anatomic Dry"
+                quebradelinha="ABS Preta"
+              />
               <label>R$ 99,90</label>
               <span>Ou em 3x no cartão de 33,30</span>
             </div>
             <div className={style.produto}>
               <Link to="/produto">
-                <img src={produto7} alt="produto8" />
+                <Img src={produto7} text="produto7" />
               </Link>
-              <Link to="/produto">Regata Feminina Anatomic Dry <br />Baseball 29 Preta</Link>
+              <Description
+                text="Regata Feminina Anatomic Dry"
+                quebradelinha="Baseball 29 Preta"
+              />
               <label>R$ 99,90</label>
               <span>Ou em 3x no cartão de 33,30</span>
             </div>
             <div className={style.produto}>
               <Link to="/produto">
-                <img src={produto8} alt="produto8" />
+                <Img src={produto8} text="produto8" />
               </Link>
-              <Link to="/produto">Regata Feminina Anatomic <br />SNAKE Branca</Link>
+              <Description
+                text="Regata Feminina Anatomic"
+                quebradelinha="SNAKE Branca"
+              />
               <label>R$ 99,90</label>
               <span>Ou em 3x no cartão de 33,30</span>
             </div>
             <div className={style.produto}>
               <Link to="/produto">
-                <img src={produto9} alt="produto8" />
+                <Img src={produto9} text="produto9" />
               </Link>
-              <Link to="/produto">Regata Feminina Anatomic <br />REDSKULL Vermelha</Link>
+              <Description
+                text="Regata Feminina Anatomic "
+                quebradelinha="REDSKULL Vermelha"
+              />
+
               <label>R$ 99,90</label>
               <span>Ou em 3x no cartão de 33,30</span>
             </div>
             <div className={style.produto}>
               <Link to="/produto">
-                <img src={produto10} alt="produto8" />
+                <Img src={produto10} text="produto10" />
               </Link>
-              <Link to="/produto">Regata Femina Anatomic <br />CAMO GREY Cinza</Link>
+
+              <Description
+                text="Regata Feminina Anatomic"
+                quebradelinha="CAMO GREY Cinza"
+              />
+
               <label>R$ 99,90</label>
               <span>Ou em 3x no cartão de 33,30</span>
             </div>

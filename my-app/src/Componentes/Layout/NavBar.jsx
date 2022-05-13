@@ -29,7 +29,6 @@ function NavBar(){
                             <Link to='/promo'><li>Promoções</li></Link>
                             <Link to='/masculino'><li>Masculino</li></Link>
                             <Link to='/feminino'><li>Feminino</li></Link>
-                            <Link to='/infantil'><li>Infantil</li></Link>
                             <Link to='/novidades'><li>Novidades</li></Link>
                             <Link to='/outlet'><li>Outlet</li></Link>
                         </ul>

@@ -87,20 +87,8 @@ figure{
     justify-content: center;
 }
 
-.produto>a{
-    margin-top: 1em;
-    background-color: #fff;
-    text-decoration: none;
-    color: #222;
-    transition: 0.5s;
-    font-size: 15px;
-    font-weight: 500;
-    text-align: center;
-}
 
-.produto>a:hover{
-    color: #eb4c4c;
-}
+
 
 .produto>label{
     font-size: 15px;

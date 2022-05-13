@@ -1,0 +1,109 @@
+.produto_conteiner{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.text{
+    margin: 15px 0;
+    position: relative;
+    left: -30px;
+}
+.text>label>a{
+    text-decoration: none;
+    color: #222;
+}
+
+.text>label>a:hover{
+    color: #eb4c4c;
+    transition: 0.5s;
+}
+.product{
+    margin: 0 auto;
+}
+.imagem{
+    position: relative;
+    top: 10px;
+    left: -40px;
+}
+
+.information{
+    margin: 10px auto;
+}
+
+.information>h2{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.descricao>p>span{
+    color: #B0D95E;
+    font-weight: 700;
+}
+
+.descricao>p{
+    margin-top: 1em;
+}
+
+.preco{
+    color: #eb4c4c;
+    font-size: 20px;
+}
+
+.divide{
+    color: #687e00;
+    font-size: 14px;
+    font-weight: 500;
+}
+.avaliacao{
+    cursor: pointer;
+    font-size: 13px;
+}
+.avaliacao:hover{
+    color:#eb4c4c ;
+}
+
+.information_product{
+    margin-top: 1em;
+}
+
+.information_product>p{
+    margin-top: 1em;
+}
+
+.descricao_rapida{
+    font-size: 15px;
+    font-family: Raleway;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 9px;
+}
+
+.produto{
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+
+.p_color_tecido{
+    color: #888;
+}
+
+.select{
+    margin-top: 1em;
+}
+
+.select>select{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.frete{
+    margin: 0 auto;
+}
