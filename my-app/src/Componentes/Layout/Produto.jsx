@@ -3,11 +3,39 @@ import Description from './Description'
 import Frete from './Frete.jpg'
 import Produto1 from '../Pages/img/produto1.jpg'
 import style from './Produto.module.css'
+import BuyButton from './BuyButton'
+import Mensagem from './Mensagem'
+import { useState,useEffect } from 'react'
+import Loading from './Loading'
+import { parse ,v4 as uuidv4} from 'uuid'
+import { useParams } from 'react-router-dom'
+
 function Produto(){
+    const{id} = useParams()
+    const [mensagem,setMensagem] =useState('')
+    const [type,setType] =useState()
+    const [produto,setProduto]= useState([])
 
 
+    function AdicionarSacola(sacola){
+        sacola.produto= [] 
+        
+        
+        fetch(`http://localhost:5000/sacola/${id}`,{
+          method: "POST",
+          headers:{
+            "Content-type": "application/json",
+          },
+        }).then((resp)=> resp.json())
+        .then((data)=> console.log(data),
+        setMensagem('O produto foi adicionado ao carrinho'),
+        setType('item_adicionado_na_sacola'))
+        .catch((err)=> console.log(err))
+        
+      }
+  
 
-
+      
     return(
        <div className={style.produto_conteiner}>
            <div className={style.product}>
@@ -50,17 +78,39 @@ function Produto(){
                       <option value="">GG</option>
                   </select>
                </div>
-           </div>
-           <div className={style.compra}>
-               <p>Qtd: <span> <input type="number" name="" id="" /></span></p>
-               <BuyButton/>
-           </div>
-           <div className={style.frete}>
-               <img src={Frete} alt="Frete Grátis" />
-           </div>
+           
+                <div className={style.compra}>
+                    <div className={style.qtd}>
+                        <p>Qtd:</p>
+                        <input type="number" name="" id="" />
+                
+                        <BuyButton name='name' sacola={AdicionarSacola} text="Comprar"/>
+                    </div>
+                </div>
+            </div>    
+            <div className={style.frete}>
+                <img src={Frete} alt="Frete Grátis" />
+            </div>
+        <Mensagem msg={mensagem} type={type}/>
        </div>
 
     )
+    
 }
 
 export default Produto
+
+
+// useEffect(()=>{
+//     setTimeout(()=>{
+//         fetch(`http://localhost:5000/sacola/${id}`,{
+//         method : "GET",
+//         headers :{
+//             'content-type' : 'application/json'
+//         }
+//     }).then((resp)=> resp.json()).then((data)=>{
+//         setProduto(data)
+       
+//     }).catch((err)=> console.log(err))
+// },300)
+//     },[id])

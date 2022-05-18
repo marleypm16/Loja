@@ -19,7 +19,10 @@ import produto10 from "./img/produto10.jpg";
 import Img from "../Layout/Img";
 import Description from "../Layout/Description";
 
+
 function Home() {
+
+
   return (
     <div className={style.home_conteiner}>
       <figure>
@@ -90,7 +93,7 @@ function Home() {
               <Link to="/produto">
                 <Img src={produto4} text="produto4" />
               </Link>
-              <Description text="Regata Machao Bait Preta" />
+              <Description text="Regata Machao Bait Preta"/>
               <label>R$ 99,90</label>
               <span>Ou em 3x no cartão de 33,30</span>
             </div>
@@ -101,6 +104,7 @@ function Home() {
               <Description
                 text="Regata Machao States Azul"
                 quebradelinha="Marinho"
+    
               />
               <label>R$ 99,90</label>
               <span>Ou em 3x no cartão de 33,30</span>
@@ -115,6 +119,7 @@ function Home() {
               <Description
                 text="Regata Feminina Anatomic Dry"
                 quebradelinha="ABS Preta"
+          
               />
               <label>R$ 99,90</label>
               <span>Ou em 3x no cartão de 33,30</span>
@@ -126,6 +131,7 @@ function Home() {
               <Description
                 text="Regata Feminina Anatomic Dry"
                 quebradelinha="Baseball 29 Preta"
+    
               />
               <label>R$ 99,90</label>
               <span>Ou em 3x no cartão de 33,30</span>
@@ -137,6 +143,7 @@ function Home() {
               <Description
                 text="Regata Feminina Anatomic"
                 quebradelinha="SNAKE Branca"
+
               />
               <label>R$ 99,90</label>
               <span>Ou em 3x no cartão de 33,30</span>
@@ -148,6 +155,7 @@ function Home() {
               <Description
                 text="Regata Feminina Anatomic "
                 quebradelinha="REDSKULL Vermelha"
+       
               />
 
               <label>R$ 99,90</label>
@@ -160,7 +168,7 @@ function Home() {
 
               <Description
                 text="Regata Feminina Anatomic"
-                quebradelinha="CAMO GREY Cinza"
+                quebradelinha="CAMO GREY CINZA"
               />
 
               <label>R$ 99,90</label>

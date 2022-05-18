@@ -1,0 +1,25 @@
+.sacola_conteiner{
+    margin-left: 80px;
+    margin-top: 40px;
+}
+
+.title{
+    margin-bottom: 10px;
+}
+
+.title>h2{
+    font-weight: 600;
+    font-size: 15px;
+    color: #333;
+}
+
+.text>p>span:hover{
+    color: #eb4c4c;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.text>p{
+    margin: 0 0 10px;
+    color: #222;
+}

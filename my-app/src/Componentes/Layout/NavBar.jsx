@@ -3,8 +3,12 @@ import {BsCart3,BsSearch} from 'react-icons/bs'
 import {FiUser} from 'react-icons/fi'
 import Logo from './logo.svg'
 import style from './Navbar.module.css'
+import Contador from "./Contador"
+import { useState } from "react"
 
 function NavBar(){
+    
+
     return(
         <>
             <nav className={style.nav}>
@@ -19,6 +23,7 @@ function NavBar(){
                                 <li className={style.itens}><Link to='/'>Home</Link></li>
                                 <li className={style.itens}><Link to='/login'><FiUser color="#fff"  className={style.icon}/> </Link></li>
                                 <li className={style.itens}><Link to='/sacola'><BsCart3 className={style.icon}/></Link></li>
+                                <Contador/>
                             </ul>
                         </section>
             </nav>

@@ -8,6 +8,7 @@ import Masculino from './Componentes/Pages/Masculino'
 import Sacola from './Componentes/Pages/Sacola'
 import Footer from './Componentes/Layout/Footer'
 import Produto from './Componentes/Layout/Produto'
+import Compras from './Componentes/Carrinho_Compras/Compras'
 
 
 
